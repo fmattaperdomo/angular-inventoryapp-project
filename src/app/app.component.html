@@ -1,9 +1,9 @@
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-dark"
-  style="background-color: #0000FF;">
+  style="background-color: #FF0000;">
       <div class="container-fluid">
         <a class="navbar-brand" 
-        routerLink="products">Inventory App</a>
+        routerLink="productos">Inventory App</a>
         <button class="navbar-toggler" type="button" 
         data-bs-toggle="collapse" data-bs-target="#navbarNav" 
         aria-controls="navbarNav" aria-expanded="false" 
@@ -19,14 +19,15 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" 
-              href="/add">Add Product</a>
+              routerLink="add-product"
+              routerLinkActive="active">Add Product</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 </div>
-<div class="container">
-  <router-outlet />
-</div>
 
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
